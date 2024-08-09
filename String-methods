@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+public class StringDemo {
+	public static void main(String[] args)
+	{
+		String str1= new String("Java");
+		System.out.println(str1);
+		
+		String str2= new String("Programming");
+		System.out.println(str2);
+		
+		System.out.println("Concatenation :"+str1.concat(str2));
+		System.out.println("Substring of JAVA : "+str1.substring(1,4));
+		System.out.println("Length of string 1 : "+str1.length());
+		System.out.println("Length of string 2 : "+str2.length());
+		System.out.println("REPLACE of character :"+str2.replace('m','s'));
+	
+	}
+}
