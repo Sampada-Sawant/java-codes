@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+
+public class AutomorphicNum {
+	public static void main(String[] args)
+	{
+		Scanner read = new Scanner(System.in);
+		System.out.println("Enter a number = ");
+		int num = read.nextInt();
+		
+		int square = num*num;
+		int lastTwoDigit = square%100;  
+		
+		System.out.println("Square of "+num+" is : "+square);
+		if(num==lastTwoDigit)
+		{
+			System.out.println(num+" is a AUTOMORPHIC number.");
+		}else 
+		{
+			System.out.println(num+" is NOT a AUTOMORPHIC number.");
+		}
+	}
+
+}
