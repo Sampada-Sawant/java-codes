@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class Spynum {
+	public static void main(String[] args)
+	{
+		Scanner read = new Scanner(System.in);
+		System.out.println("Enter a number = ");
+		int num = read.nextInt();
+		int temp=num;
+		int temp2=num;
+		
+		int sum=0;
+		int digit;
+		while(num!=0)
+		{
+			digit=num%10;
+			sum=sum+digit;
+			num=num/10;
+		}
+		System.out.println("Sum of digits of "+temp2+" is : "+sum);
+		
+		int prod=1;
+		int dig;
+		while(temp!=0)
+		{
+			dig=temp%10;
+			prod=prod*dig;
+			temp=temp/10;
+		}
+		System.out.println("Product of digits of "+temp2+" is : "+prod);
+		
+		if(sum==prod)
+		{
+			System.out.println(temp2+" is a SPY number.");
+		}else
+		{
+			System.out.println(temp2+" is NOT a SPY number.");
+		}
+	}
+}
